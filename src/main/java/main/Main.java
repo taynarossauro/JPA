@@ -6,9 +6,11 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        //instanciando objetos
         ProdutoDAO produtoDAO = new ProdutoDAO();
         Scanner scanner = new Scanner(System.in);
 
+        //menu opções para usuário
         while (true) {
             System.out.println("\nSistema de Gerenciamento de Produtos");
             System.out.println("1. Inserir Produto");
