@@ -1,6 +1,6 @@
 # Projeto: Sistema com JPA e MySQL utilizando WAMP
 
-![Exemplo de Console](meu_console.png)
+![Exemplo de Console](console_2.png)
 
 
 ![Inserção de Dados](db.png)
