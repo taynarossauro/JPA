@@ -1,5 +1,5 @@
 package models;
-
+//importando bibliitecas
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -9,11 +9,12 @@ import javax.persistence.Id;
 public class Produto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //declarando atributor
     private Long id;
-
     private String nome;
     private Double preco;
 
+    //getters e setters
     public Long getId() {
         return id;
     }
