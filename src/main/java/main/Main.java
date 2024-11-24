@@ -1,8 +1,7 @@
 package main;
-
+//Importando bibliotecas
 import dao.ProdutoDAO;
 import models.Produto;
-
 import java.util.Scanner;
 
 public class Main {
