@@ -5,8 +5,6 @@
 
 ![Inserção de Dados](db.png)
 
-# Projeto: Exemplo com JPA e MySQL utilizando WAMP
-
 ## 📋 Resumo
 Este projeto implementa um exemplo prático de utilização do **Java Persistence API (JPA)** para manipulação de dados em um banco de dados MySQL. Foi configurado utilizando **DBeaver** e **localhost**, com um projeto Maven contendo todas as dependências necessárias.
 
