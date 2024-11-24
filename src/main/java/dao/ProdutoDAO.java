@@ -9,7 +9,7 @@ import java.util.List;
 
 public class ProdutoDAO {
     private EntityManagerFactory emf = Persistence.createEntityManagerFactory("produtoPU");
-
+    //método que insere produtos no banco de daods
     public void criar(Produto produto) {
         EntityManager em = emf.createEntityManager(); 
         em.getTransaction().begin(); 
@@ -18,6 +18,7 @@ public class ProdutoDAO {
         em.close(); 
     }
 
+    //método que lê produtos
     public Produto ler(Long id) {
         EntityManager em = emf.createEntityManager();
         Produto produto = em.find(Produto.class, id); 
@@ -25,6 +26,7 @@ public class ProdutoDAO {
         return produto;
     }
 
+    //método que lista produtos
     public List<Produto> listarTodos() {
         EntityManager em = emf.createEntityManager(); 
         
@@ -33,6 +35,7 @@ public class ProdutoDAO {
         return produtos; 
     }
 
+    //método que atualiza produtos
     public void atualizar(Produto produto) {
         EntityManager em = emf.createEntityManager(); 
         em.getTransaction().begin(); 
@@ -40,7 +43,7 @@ public class ProdutoDAO {
         em.getTransaction().commit(); 
         em.close(); 
     }
-
+    //método que exclui produtos
     public void excluir(Long id) {
         EntityManager em = emf.createEntityManager(); 
         Produto produto = em.find(Produto.class, id); 
